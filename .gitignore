@@ -1,0 +1,41 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+*.tgz
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# OS
+.DS_Store
+thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Build artifacts
+build/
+dist/
+out/
+
+# Frontend (Vite/React)
+project/dist/
+
+# Backend
+server/dist/
