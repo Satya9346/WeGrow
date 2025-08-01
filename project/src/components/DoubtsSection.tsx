@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import type { Doubt } from '../types.ts';
 import { HelpCircle, Upload, Send, Image } from 'lucide-react';
 
-const API_BASE_URL = 'http://localhost:3000/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api'; // Fallback for local development
 
 interface DoubtsProps {
   userId: string;

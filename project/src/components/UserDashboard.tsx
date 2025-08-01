@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import {isToday} from 'date-fns';
 
-const API_BASE_URL = 'http://localhost:3000/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api'; // Fallback for local development
 
 export default function UserDashboard() {
   const { user, logout } = useAuth();

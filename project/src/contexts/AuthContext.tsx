@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import type { User } from '../types.ts';
 
-const API_BASE_URL = 'http://localhost:3000/api'; // Replace with your backend API URL
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api'; // Fallback for local development
 
 interface AuthContextType {
   user: User | null;
