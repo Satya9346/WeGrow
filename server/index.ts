@@ -7,7 +7,11 @@ import { User } from './src/types';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors()); // Enable CORS
+app.use(cors({
+  origin: 'https://wegrow-frontend-5t0k.onrender.com',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+})); // Enable CORS
 app.use(express.json());
 
 app.post('/api/auth/login', async (req: Request, res: Response) => {
