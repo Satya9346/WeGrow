@@ -12,7 +12,7 @@ import {
   BookOpen
 } from 'lucide-react';
 
-const API_BASE_URL = 'https://wegrow-backend-yourname.onrender.com/api';
+const API_BASE_URL = 'https://wegrow-backend-w4ey.onrender.com/api';
 
 export default function AdminDashboard() {
   const { user, logout } = useAuth();
